@@ -1,0 +1,61 @@
+---
+title: "STAT 340 R Lab"
+subtitle: "Logistic Regression"
+output: pdf_document
+---
+
+```{r setup, echo=FALSE}
+## Load libraries
+library(MASS)
+
+## Load data
+MedGPA <- read.csv("https://github.com/marievozanne/marievozanne.github.io/blob/master/stat340_f2020/data/MedGPA.csv")
+```
+
+
+## Medical School Admissions.
+
+#### The data for Medical School Admissions is in MedGPA.csv, taken from undergraduates from a small liberal arts school over several years. We are interested in student attributes that are associated with higher acceptance rates.
+
+- \texttt{Accept} = accepted (A) into medical school or denied (D)
+- \texttt{Acceptance} = accepted (1) into medical school or denied (0)
+- \texttt{Sex} = male (M) or female (F)
+- \texttt{BCPM} = GPA in natural sciencces and mathematics
+- \texttt{GPA} = overall GPA
+- \texttt{VR} = verbal reasoning subscale score of the MCAT
+- \texttt{PS} = physical sciences subscale score of the MCAT
+- \texttt{WS} = writing samples subscale score of the MCAT
+- \texttt{BS} = biological sciences subscale score of the MCAT
+- \texttt{MCAT} = MCAT total score
+- \texttt{Apps} = number of schools applied to
+
+### Be sure to \underline{interpret model coefficients and associated tests of significance or confidence intervals} when answering the following questions. Note, you can use the function confint() from the MASS package to calculate confidence intervals.
+
+#### (a) Compare the relative effects of improving your MCAT score versus improving your GPA on your odds of being accepted to medical school. Write out the model that you fit, including the three pieces of the GLM (the random component, the linear predictor, and the link function).
+
+
+
+#### (b) After controlling for MCAT and GPA, is the number of applications related to odds of getting into medical school?
+
+
+
+#### (c) Is one MCAT subscale more important than the others?
+
+
+
+#### (d) Does it make sense to include MCAT and the four subscales in the same model? Why or why not?
+
+
+
+#### (e) Is there any evidence that the effect of MCAT score or GPA differs for males and females?
+
+
+
+
+
+## References
+
+A. Cannon et al. 2018. Package Stat2Data. "https://cran.r-project.org/web/packages/Stat2Data/Stat2Data.pdf"
+
+P. Roback and J. Legler. 2020. \emph{Beyond Multiple Linear Regression: Applied Generalized Linear Models and Multilevel Models in R}.
+
